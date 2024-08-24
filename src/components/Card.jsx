@@ -6,6 +6,7 @@ function Card(props) {
   return (
     <div className="card">
       <div className="top">
+        <Detail detail={props.id} />
         <h2 className="name">{props.name}</h2>
         <Avatar img={props.img} />
       </div>
@@ -18,3 +19,4 @@ function Card(props) {
 }
 
 export default Card;
+ 
